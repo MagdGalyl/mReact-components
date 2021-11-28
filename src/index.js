@@ -11,11 +11,27 @@ if (module.hot) {
 const App = () => {
   return (
     <div className="ui container comments">
-      <CommentDetail />
-      <CommentDetail />
-      <CommentDetail />
-      <CommentDetail />
-      <CommentDetail />
+      
+      <CommentDetail 
+      author = "Sam" 
+      timeAgo = "Today at 08:18 PM" 
+      content = "yo yo yo" 
+      avatar = {faker.image.avatar()}
+      />
+
+      <CommentDetail 
+      author = "Alex" 
+      timeAgo = "Today at 18:08 AM"  
+      content = "yo yo yo" 
+      avatar = {faker.image.avatar()}
+      />
+
+      <CommentDetail 
+      author = "Jane" 
+      timeAgo = "Yesterday at 08:18 PM" 
+      content = "yo yo yo" 
+      avatar = {faker.image.avatar()}
+      />
     </div>
   );
 };
